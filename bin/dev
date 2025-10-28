@@ -1,0 +1,13 @@
+#!/bin/bash
+set -eo pipefail
+
+echo "Starting server (development)..."
+
+export RACK_ENV=development
+
+if [ -z "$CONSOLE_OUTPUT" ]
+then
+  export CONSOLE_OUTPUT=XTerm
+fi
+
+exec bundle exec falcon-host config/falcon/${RACK_ENV}.rb
