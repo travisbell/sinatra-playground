@@ -6,4 +6,4 @@
 bin/dev
 ```
 
-By default Falcon will start on port 8080.
+By default Falcon will start on port `8080`.
