@@ -2,7 +2,7 @@
   <% results.each do |item| %>
     <article>
       <hgroup>
-        <h3><a href="result/<%= item[:id] %>"><%= item[:name] %></a></h3>
+        <h3><%= link_to(item[:name], item[:url]) %></h3>
         <p>Item was added: <%= time_ago_in_words(item[:date]) %> ago</p>
       </hgroup>
 

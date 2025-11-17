@@ -13,9 +13,7 @@ module Controllers
           locale: "en"
         },
         layout: :layout,
-        locals: {
-          title: "ERB Demo"
-        },
+        locals: {},
         template: :index
       ).render
     end

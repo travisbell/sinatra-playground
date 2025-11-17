@@ -13,6 +13,7 @@ module Components
     include ActionView::Helpers::FormHelper
     include ActionView::Helpers::FormOptionsHelper
     include ActionView::Helpers::JavaScriptHelper
+    include ActionView::Helpers::UrlHelper
 
     def file_name
       @file_name ||= self.class.name.demodulize.underscore

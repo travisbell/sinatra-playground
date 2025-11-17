@@ -26,7 +26,7 @@ module Pages
     end
 
     def render
-      @layout.render(Object.new, @locals) { @template.render(self, @locals) }
+      @layout.render(self, @locals) { @template.render(self, @locals) }
     end
 
     def request_cache
