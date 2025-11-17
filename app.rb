@@ -19,16 +19,7 @@ class App < Sinatra::Base
   end
 
   helpers do
-    include ActionView::Helpers::FormHelper
-    include ActionView::Helpers::FormOptionsHelper
-    include ActionView::Helpers::JavaScriptHelper
-    include ActionView::Helpers::TagHelper
-    include Helpers::PhlexRendering
   end
 
-  register Controllers::Test
-
-  get "/" do
-    phlex(Pages::Index.new)
-  end
+  register Controllers::Demo
 end
