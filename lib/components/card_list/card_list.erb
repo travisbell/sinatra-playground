@@ -1,12 +1,15 @@
 <div>
   <% results.each do |item| %>
-    <article>
+    <article class="card">
       <hgroup>
         <h3><%= link_to(item[:name], item[:url]) %></h3>
         <p>Item was added: <%= time_ago_in_words(item[:date]) %> ago</p>
       </hgroup>
 
-      <p><%= item[:description] %></p>
+      <div class="flex">
+        <%= image_tag("/images/#{item[:image_path]}", size: '100') %>
+        <p><%= item[:description] %></p>
+      </div>
     </article>
   <% end %>
 </div>

@@ -12,6 +12,7 @@ module Components
           date: rand(1..12).months.ago,
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor dolor ac luctus pulvinar. Vivamus consequat libero ipsum, id ullamcorper sem gravida nec. Suspendisse vel.",
           id: 1,
+          image_path: "1.jpg",
           name: "Card Item 1",
           url: "/demo/item/1"
         },
@@ -19,6 +20,7 @@ module Components
           date: rand(1..14).days.ago,
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor dolor ac luctus pulvinar. Vivamus consequat libero ipsum, id ullamcorper sem gravida nec. Suspendisse vel.",
           id: 2,
+          image_path: "2.jpg",
           name: "Card Item 2",
           url: "/demo/item/2"
         },
@@ -26,6 +28,7 @@ module Components
           date: rand(1..24).hours.ago,
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor dolor ac luctus pulvinar. Vivamus consequat libero ipsum, id ullamcorper sem gravida nec. Suspendisse vel.",
           id: 3,
+          image_path: "3.jpg",
           name: "Card Item 3",
           url: "/demo/item/3"
         },
@@ -33,6 +36,7 @@ module Components
           date: rand(1..12).months.ago,
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor dolor ac luctus pulvinar. Vivamus consequat libero ipsum, id ullamcorper sem gravida nec. Suspendisse vel.",
           id: 4,
+          image_path: "4.jpg",
           name: "Card Item 4",
           url: "/demo/item/4"
         }

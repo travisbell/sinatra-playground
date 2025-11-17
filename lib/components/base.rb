@@ -12,6 +12,7 @@ end
 
 module Components
   class Base
+    include ActionView::Helpers::AssetTagHelper
     include ActionView::Helpers::CaptureHelper
     include ActionView::Helpers::DateHelper
     include ActionView::Helpers::FormHelper
