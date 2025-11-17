@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# Making everything html_safe _for now_. Most of the ActionView helpers check and/or
+# expect strings to come out of ActiveSupport::SafeBuffer, and if they don't the
+# strings are automaticlly escaped. I don't know how to properly deal with this yet.
+
 class Object
   def html_safe?
     true
