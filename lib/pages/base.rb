@@ -33,6 +33,8 @@ module Pages
       ActiveSupport::IsolatedExecutionState[:request_cache] ||= {}
     end
 
+    private
+
     def set_locale
       I18n.locale = params[:locale] || @config[:locale] || I18n.default_locale
     end
